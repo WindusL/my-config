@@ -3,7 +3,7 @@
 #set password [lindex $argv 1 ]
 set server_protocol [lindex $argv 0]
 set server_prefix [lindex $argv 1]
-set timeout 10                     
+set timeout 3600                     
 
 # 服务器列表
 dict set servers 前缀 "用户名@IP ### 密码"

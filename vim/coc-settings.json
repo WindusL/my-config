@@ -1,0 +1,27 @@
+{
+    "suggest.timeout": 15000,
+    "suggest.noselect": true,
+    "suggest.enablePreselect": false,
+    "suggest.enablePreview": true,
+    "suggest.floatEnable": true,
+    "suggest.detailField": "preview",
+    "suggest.snippetIndicator": "",
+    "suggest.triggerCompletionWait": 100,
+    "suggest.echodocSupport": true,
+    "java.home": "/Library/Java/JavaVirtualMachines/jdk-11.0.14.jdk/Contents/Home",
+    "java.configuration.runtimes": [{
+        "name": "JavaSE-1.8",
+        "path": "/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home"
+    }],
+    "java.jdt.ls.vmargs": "-javaagent:/Users/windus/.m2/repository/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar",
+    "java.errors.incompleteClasspath.severity": "info",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.configuration.maven.userSettings": "/Users/windus/.m2/settings.xml",
+    "java.import.maven.enabled": true,
+    "java.autobuild.enabled": true,
+    "java.trace.server": "verbose",
+    "diagnostic.displayByAle": false,
+    "diagnostic.refreshOnInsertMode": false,
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.analysis.extraPaths":["/usr/local/lib/python3.9/site-packages"]
+}

@@ -64,6 +64,7 @@ fif 文本
 
 - [ranger-zjumper z命令](https://github.com/ask1234560/ranger-zjumper)
 - [ranger_devicons 文件图标](https://github.com/alexanderjeurissen/ranger_devicons)
+- [ranger-archives (解)压缩](https://github.com/maximtrp/ranger-archives)
 
 ### 快捷键
 

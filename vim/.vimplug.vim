@@ -113,7 +113,7 @@ let g:autoim_toggle_shortcut = 'ctrl_space'
 " coc.nvim
 " --------------------------------------------------------------------------------------------------------------------------------------
 
-let g:coc_global_extensions = ['coc-vimlsp', 'coc-css', 'coc-docker', 'coc-emmet', 'coc-html-css-support', 'coc-json', 'coc-pyright', 'coc-sh', 'coc-snippets', 'coc-tsserver', 'coc-html', 'coc-translator', 'coc-vetur']
+let g:coc_global_extensions = ['coc-vimlsp', 'coc-css', 'coc-docker', 'coc-emmet', 'coc-html-css-support', 'coc-json', 'coc-pyright', 'coc-sh', 'coc-snippets', 'coc-tsserver', 'coc-html', 'coc-translator', 'coc-vetur', 'coc-prettier']
 
 " vim-autoformat
 " --------------------------------------------------------------------------------------------------------------------------------------

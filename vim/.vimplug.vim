@@ -35,6 +35,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " 代码缩进线
 Plug 'Yggdroot/indentLine'
+" extends " and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
+Plug 'junegunn/vim-peekaboo'
 
 call plug#end()
 

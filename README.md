@@ -128,10 +128,10 @@ fif 文本
 ssh 连接自动输入密码：
 
 ```bash expect_ssh.sh
-# 服务器列表
-dict set servers 前缀 "用户名@IP ### 密码"
-dict set servers 前缀 "用户名@IP ### 密码"
-dict set servers 前缀 "用户名@IP ### 密码"
+# 服务器列表([-p 端口] 可选）
+dict set servers 前缀 "[-p 端口] 用户名@IP ### 密码"
+dict set servers 前缀 "[-p 端口] 用户名@IP ### 密码"
+dict set servers 前缀 "[-p 端口] 用户名@IP ### 密码"
 ```
 
 查看服务器列表命令：`sl`

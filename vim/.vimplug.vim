@@ -35,8 +35,12 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " 代码缩进线
 Plug 'Yggdroot/indentLine'
+" 多行编辑
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " extends " and @ in normal mode and <CTRL-R> in insert mode so you can see the contents of the registers.
 Plug 'junegunn/vim-peekaboo'
+" 快速移动
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
@@ -147,3 +151,11 @@ let g:vim_markdown_math = 1
 let g:vim_markdown_conceal_code_blocks = 0
 let g:vim_markdown_strikethrough = 1
 let g:vim_markdown_new_list_item_indent = 2
+
+
+" easymotion/vim-easymotion
+" --------------------------------------------------------------------------------------------------------------------------------------
+" Disable default mappings
+let g:EasyMotion_do_mapping = 0 
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1

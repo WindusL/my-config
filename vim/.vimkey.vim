@@ -112,3 +112,31 @@ nnoremap <leader>fif :Rg<CR>
 "================================================
 
 noremap <leader>lg :tabe<CR>:-tabmove<CR>:term lazygit<CR>
+
+"================================================
+" vim-visual-multi
+"================================================
+
+" Basic usage:
+"select words with Ctrl-N (like Ctrl-d in Sublime Text/VS Code)
+"create cursors vertically with Ctrl-Down/Ctrl-Up
+"select one character at a time with Shift-Arrows
+"press n/N to get next/previous occurrence
+"press [/] to select next/previous cursor
+"press q to skip current and get next occurrence
+"press Q to remove current cursor/selection
+"start insert mode with i,a,I,A
+
+"================================================
+" easymotion/vim-easymotion
+"================================================
+
+" Jump to anywhere you want with minimal keystrokes
+" `s{char}{char}{label}`
+nmap f <Plug>(easymotion-overwin-f2)
+" Jump to word
+nmap w <Plug>(easymotion-overwin-w)
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+nmap <Leader>L <Plug>(easymotion-overwin-line)

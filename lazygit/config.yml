@@ -5,5 +5,5 @@ gui:
       - underline
 git:
   paging:
-    colorArg: always
-    pager: delta --dark --paging=never
+    colorArg: never
+    pager: ydiff -p cat -s --wrap --width={{columnWidth}}

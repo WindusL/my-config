@@ -124,6 +124,12 @@ fif 文本
 
 `commands.py` 自定义命令配置文件。
 
+# lazygit
+
+打开快捷命令：`lg`
+
+配置文件路径：`~/Library/Application Support/lazygit/config.yml`
+
 # SSH
 
 ssh 连接自动输入密码：
@@ -144,7 +150,7 @@ dict set servers 前缀 "[-p 端口] 用户名@IP ### 密码"
 - brew install the_silver_searcher
 - brew install ripgrep
 - brew install jesseduffield/lazygit/lazygit
-- brew install git-delta
+- brew install ydiff
 - brew install openssh
 - brew install coreutils
 - brew install gnu-sed

@@ -10,6 +10,13 @@ dict set servers 前缀 "用户名@IP ### 密码"
 dict set servers 前缀 "用户名@IP ### 密码"
 dict set servers 前缀 "用户名@IP ### 密码"
 
+# terminal 窗口大小改变后发送信号到 expect spawn 进程
+trap {
+ set rows [stty rows]
+ set cols [stty columns]
+ stty rows $rows columns $cols < $spawn_out(slave,name)
+} WINCH
+
 # 当我们使用字符串拆分字符串，tcl会使用字符串中的每个字符来拆分，无法达到我们的目的。
 # 可以使用这个过程进行分割
 proc OnePiece {str sep} {

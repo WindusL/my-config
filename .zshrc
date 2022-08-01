@@ -77,6 +77,7 @@ plugins=(
     git
     z
     vi-mode
+    mvn
 )
 
 VI_MODE_SET_CURSOR=true

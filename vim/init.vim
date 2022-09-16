@@ -46,8 +46,8 @@ set t_Co=256
 set scrolloff=5
 " 当前行显示下滑线
 set cursorline
-" 文字不自动换行
-set nowrap
+" 文字自动换行
+set wrap
 set showcmd
 " 编码
 set encoding=utf-8

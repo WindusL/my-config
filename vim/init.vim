@@ -53,7 +53,7 @@ set showcmd
 set encoding=utf-8
 " 显示行尾空格
 set list
-set lcs=trail:\\u21b5
+set lcs=trail:\\u2423
 "
 set tw=0
 set indentexpr=

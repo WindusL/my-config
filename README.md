@@ -5,13 +5,40 @@
 
 # tmux
 
-前缀 `Ctrl-o`
-
 1) 安装 [oh-my-tmux](https://github.com/gpakosz/.tmux) 
 2) 安装插件管理器 [tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)，并执行安装插件命令
 4) 覆盖 `.tmux.conf`和`.tmux.conf.local`两文件。
 6) 安装主题字体 [nerd-fonts](https://github.com/ryanoasis/nerd-fonts) 并设置`item2`这个字体
 7) 设置`item2`配色方案为`Firewatch.itermcolors`文件
+
+**快捷键：** 
+
+> 注意：所有快捷键都是按下前缀快捷键之后生效
+
+| 键位   | 描述                                        |
+|--------|---------------------------------------------|
+| C-o    | 前缀                                        |
+| e      | 打开配置文件                                |
+| r      | 更新配置                                    |
+| u      | 更新插件                                    |
+| s      | 切换 session                                |
+| w      | 切换 window                                 |
+| c      | 打开新 window                               |
+| x      | 关闭window / pane                           |
+| .      | 移动 window 位置                            |
+| ,      | 重命名 window                               |
+| C-h(p) | 向前切换 window                             |
+| C-l(n) | 向后切换 window                             |
+| \|     | 水平分割 pane                               |
+| \-     | 垂直分割 pane                               |
+| H      | 向左移动 pane                               |
+| L      | 向右移动 pane                               |
+| J      | 向下移动 pane                               |
+| K      | 向上移动 pane                               |
+| q      | 显示当前窗口 pane 编号                      |
+| t      | 显示当前时间                                |
+| Enter  | 复制模式 (vi 快捷键)                        |
+| :      | 命令模式 (如同步输入 set synchronize-panes) |
 
 ### iterm2 配置
 

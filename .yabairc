@@ -1,0 +1,15 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# set layout bsp or float (default: float)
+/usr/local/bin/yabai -m config layout float
+
+# Set all padding and gaps to 20pt (default: 0)
+/usr/local/bin/yabai -m config top_padding    0
+/usr/local/bin/yabai -m config bottom_padding 0
+/usr/local/bin/yabai -m config left_padding   0
+/usr/local/bin/yabai -m config right_padding  0
+/usr/local/bin/yabai -m config window_gap     5
+
+# floating windows are always on top (default: off)
+/usr/local/bin/yabai -m config window_topmost on

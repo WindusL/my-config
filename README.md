@@ -170,6 +170,16 @@ dict set servers 前缀 "[端口 ### ]用户名@IP ### 密码"
 
 查看服务器列表命令：`sl`
 
+# yabai
+- 安装 [yabai](https://github.com/koekeishiya/yabai)
+- 将`.yabairc`配置文件放入`$HOME`目录
+- 启动`yabai --start-service`
+
+# skhd
+- 安装 [skhd](https://github.com/koekeishiya/skhd)
+- 将`.skhdrc`配置文件放入`$HOME`目录
+- 启动`skhd --start-service`
+
 # 第三方依赖
 - brew install rg
 - brew install fd

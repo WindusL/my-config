@@ -231,7 +231,7 @@ tmux_conf_theme_right_separator_sub='\uE0B3'  #   PowerlineSymbols.otf font, see
 
 tmux_conf_theme_status_left=" ❐ #S | #{synchronized}, #{hostname_ssh} "
 
-tmux_conf_theme_status_right=" #{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} | CPU #{cpu_percentage} | RAM #{ram_percentage} | ﮮ %a%h-%d %H:%M | #{continuum_status} "
+tmux_conf_theme_status_right=" #{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} | CPU #{cpu_percentage} | RAM #{ram_percentage} | %a%h-%d %H:%M | #{continuum_status} "
 
 # status left style
 tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_18,$tmux_conf_theme_colour_19"

@@ -39,6 +39,7 @@
 | t      | 显示当前时间                                |
 | Enter  | 复制模式 (vi 快捷键)                        |
 | :      | 命令模式 (如同步输入 set synchronize-panes) |
+| g      | 悬浮窗口                                    |
 
 ### iterm2 配置
 

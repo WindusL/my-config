@@ -184,7 +184,6 @@ dict set servers 前缀 "[端口 ### ]用户名@IP ### 密码"
 # 第三方依赖
 - brew install rg
 - brew install fd
-- brew install highlight
 - brew install the_silver_searcher
 - brew install ripgrep
 - brew install jesseduffield/lazygit/lazygit
@@ -197,3 +196,5 @@ dict set servers 前缀 "[端口 ### ]用户名@IP ### 密码"
 - brew install gawk
 - brew install grep
 - brew install trash
+- brew install bat
+- brew install jq

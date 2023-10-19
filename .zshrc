@@ -91,12 +91,56 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
+# terminal env
+export TERM=xterm-256color
+
+# gnu 配置
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+alias ls='ls -F --show-control-chars --color=auto'
+eval `gdircolors -b $HOME/.dir_colors`
+
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+
+PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
+
+PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+
+PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+
+PATH="/usr/local/opt/gawk/libexec/gnubin:$PATH"
+
+PATH="/usr/local/bin/trash:$PATH"
+
+# open ssh
+export PATH="/usr/local/Cellar/openssh/8.9p1/bin:$PATH"
+
+# ranger z env 
+export _Z_SRC=/Users/windus/.oh-my-zsh/plugins/z/z.sh
+
+# ranger 文本文件在 neovim 中打开
+export VISUAL=/usr/local/bin/nvim
+export EDITOR=/usr/local/bin/nvim
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
 #   export EDITOR='nvim'
 # fi
+
+# 配置粘贴上屏慢问题
+# This speeds up pasting w/ autosuggest
+# https://github.com/zsh-users/zsh-autosuggestions/issues/238
+pasteinit() {
+  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+}
+
+pastefinish() {
+  zle -N self-insert $OLD_SELF_INSERT
+}
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -114,63 +158,14 @@ source $ZSH/oh-my-zsh.sh
 alias vi='/usr/local/bin/nvim'
 alias ra='ranger'
 alias lg='lazygit'
+alias jo='joshuto'
 
 # expect alias
 alias sl='sh ~/izone/shell/ssh_list.sh'
 alias ssh='expect ~/izone/shell/expect_ssh.sh ssh'
 alias sftp='expect ~/izone/shell/expect_ssh.sh sftp'
 
-# 配置粘贴上屏慢问题
-# This speeds up pasting w/ autosuggest
-# https://github.com/zsh-users/zsh-autosuggestions/issues/238
-pasteinit() {
-  OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
-  zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
-}
-
-pastefinish() {
-  zle -N self-insert $OLD_SELF_INSERT
-}
-zstyle :bracketed-paste-magic paste-init pasteinit
-zstyle :bracketed-paste-magic paste-finish pastefinish
-# HomeBrew 镜像配置
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-# gnu 配置
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-alias ls='ls -F --show-control-chars --color=auto'
-eval `gdircolors -b $HOME/.dir_colors`
-
-PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-
-PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
-
-PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
-
-PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-
-PATH="/usr/local/opt/gawk/libexec/gnubin:$PATH"
-
 # brew install trash
 alias rm='/usr/local/bin/trash -F'
-PATH="/usr/local/bin/trash:$PATH"
-
-# java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_321.jdk/Contents/Home
-export PATH=$PATH:$JAVA_HOME/bin
-export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-
-# open ssh
-export PATH="/usr/local/Cellar/openssh/8.9p1/bin:$PATH"
-
-# ranger z env 
-export _Z_SRC=/Users/windus/.oh-my-zsh/plugins/z/z.sh
-
-# ranger 文本文件在 neovim 中打开
-export VISUAL=/usr/local/bin/nvim
-export EDITOR=/usr/local/bin/nvim
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

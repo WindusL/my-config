@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # terminal env
-export TERM=xterm-256color
+export TERM=screen-256color
 
 # gnu 配置
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"

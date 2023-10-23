@@ -91,8 +91,8 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# terminal env
-export TERM=screen-256color
+# terminal env ( screen-256color vi 显示有问题，xterm-256color man 显示有问题)
+export TERM=xterm-256color
 
 # gnu 配置
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"

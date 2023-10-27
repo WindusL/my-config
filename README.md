@@ -181,6 +181,41 @@ dict set servers 前缀 "[端口 ### ]用户名@IP ### 密码"
 - 将`.skhdrc`配置文件放入`$HOME`目录
 - 启动`skhd --start-service`
 
+# mpv
+- 安装[mpv](https://mpv.io/installation/)
+- 将`mpv.conf`配置文件放入`~/.config/mpv/mpv.conf`
+
+- 常用命令
+
+`mpv --playlist=playlist.txt` # 播放列表（playlist.txt 内容为文件路径，多个以换行符分割）
+
+选项：
+
+`--shuffle` 随机播放
+
+- 常用快捷键
+
+| 键位           | 描述                   |
+|----------------|------------------------|
+| LEFT and RIGHT | 前进/后退 5s           |
+| UP and DOWN    | 前进/后退 1m           |
+| [ and ]        | 调整播放速度           |
+| BACKSPACE      | 重置播放速度           |
+| < and >        | 上一曲/下一曲          |
+| ENTER          | 下一曲                 |
+| SPACE          | 暂停                   |
+| q              | 退出                   |
+| Q              | 退出并保存当前播放位置 |
+| 9 AND 0        | 降低/升高音量          |
+| m              | 静音                   |
+| F8             | 显示播放列表当前位置   |
+| i              | 显示当前播放信息       |
+| L              | 单曲循环               |
+| l              | A-B循环                |
+| v              | 切换字幕（歌词）显示   |
+| j              | 选择字幕（歌词）       |
+| z and x        | 字幕提前/滞后          |
+
 # 第三方依赖
 - brew install rg
 - brew install fd

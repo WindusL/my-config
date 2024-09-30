@@ -11,6 +11,7 @@ function show_paginated_playlist()
     local playlist_page = {}
     local relative_index = 0;
     for i = start_index, end_index do
+        -- lua 索引从 1 开始
         relative_index = relative_index + 1
         local entry = playlist[i]
         table.insert(playlist_page, relative_index .. ". 《" .. i .. "》" .. entry.filename)

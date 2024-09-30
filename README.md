@@ -187,11 +187,16 @@ dict set servers 前缀 "[端口 ### ]用户名@IP ### 密码"
 
 - 常用命令
 
-`mpv --playlist=playlist.txt` # 播放列表（playlist.txt 内容为文件路径，多个以换行符分割）
+    `mpv`
 
-选项：
+    选项：
 
-`--shuffle` 随机播放
+    `--shuffle` 随机播放
+
+    `--playlist=playlist.txt` 播放列表（playlist.txt 内容为文件路径，多个以换行符分割）
+
+    `--no-audio-display` 不打开播放器界面显示视频（有的歌曲带有视频属性导致会无法在命令行播放）
+
 
 - 常用快捷键
 
@@ -206,7 +211,7 @@ dict set servers 前缀 "[端口 ### ]用户名@IP ### 密码"
 | SPACE          | 暂停                   |
 | q              | 退出                   |
 | Q              | 退出并保存当前播放位置 |
-| 9 AND 0        | 降低/升高音量          |
+| / AND *        | 降低/升高音量          |
 | m              | 静音                   |
 | i              | 显示当前播放信息       |
 | L              | 单曲循环               |
@@ -218,7 +223,8 @@ dict set servers 前缀 "[端口 ### ]用户名@IP ### 密码"
 | h              | 显示 playlist          |
 | a              | 向后翻页 playlist      |
 | k              | 向前翻页 playlist      |
-| 1-9            | 选择播放指定歌曲       |
+| 0-9            | 选择播放指定歌曲       |
+| #              | 切换音轨               |
 
 
 # 第三方依赖
@@ -238,3 +244,5 @@ dict set servers 前缀 "[端口 ### ]用户名@IP ### 密码"
 - brew install trash
 - brew install bat
 - brew install jq
+
+> `~/.ssh/config`文件使用`SetEnv TERM=xterm-256color`可以设置`ssh`连接后`TERM`变量值。

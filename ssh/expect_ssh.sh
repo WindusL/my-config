@@ -39,7 +39,7 @@ set server [dict get $servers $server_prefix]
 #set server_list [split $server]
 set server_list [OnePiece $server " ### "]
 
-spawn $server_protocol [expr [string equal $server_protocol "ssh"] == 1 ? {"-p"} : {"-P"}] [expr [llength $server_list] == 3 ? {[lindex $server_list 0]} : 22] [lindex $server_list end-1]
+spawn /usr/bin/$server_protocol [expr [string equal $server_protocol "ssh"] == 1 ? {"-p"} : {"-P"}] [expr [llength $server_list] == 3 ? {[lindex $server_list 0]} : 22] [lindex $server_list end-1]
 
 expect {
   "*yes/no" { send "yes\r"; exp_continue}

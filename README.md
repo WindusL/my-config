@@ -86,7 +86,7 @@ fif 文本
 
 # ranger
 
-安装 [ranger](https://github.com/ranger/ranger)
+安装 [ranger](https://github.com/ranger/ranger) 或 [joshuto](https://github.com/kamiyaa/joshuto)
 
 ### 安装插件
 
@@ -128,7 +128,7 @@ fif 文本
 |     `'<key>`    | 快速切换指定`<key>`书签    |
 |   `u + m<key>`  | 删除指定`<key>`书签        |
 |     `' + '`     | 后退                       |
-|   `Shift + s`   | 终端跳转到当前文件夹       |
+|   `Shift + s`   | 终端跳转到当前文件夹 (`joshuto` 快捷键为 `Q`，需配置退出函数)       |
 |    `<space>`    | 选中                       |
 |       `v`       | 反向选中                   |
 |       `V`       | 进入`visual`模式           |
@@ -153,6 +153,8 @@ fif 文本
 `commands.py` 自定义命令配置文件。
 
 # lazygit
+
+安装[lazygit](https://github.com/jesseduffield/lazygit)
 
 打开快捷命令：`lg`
 
@@ -241,8 +243,8 @@ dict set servers 前缀 "[端口 ### ]用户名@IP ### 密码"
 - brew install findutils
 - brew install gawk
 - brew install grep
-- brew install trash
-- brew install bat
-- brew install jq
+- ~~brew install trash~~
+- brew install bat (joshuto 文本高亮显示)
+- brew install jq (joshuto json 高亮显示)
 
 > `~/.ssh/config`文件使用`SetEnv TERM=xterm-256color`可以设置`ssh`连接后`TERM`变量值。

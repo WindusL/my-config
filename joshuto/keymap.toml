@@ -97,7 +97,8 @@ keymap = [
 #  { keys = [":"], command = ":" },
   { keys = [";"], command = ":" },
 
-  { keys = ["'"], command = ":shell zsh" },
+  { keys = ["'"], command = ":shell " },
+  { keys = [":"], command = ":shell open ." },
   { keys = ["m", "k"], command = ":mkdir " },
   { keys = ["c", "w"], command = ":rename " },
 
@@ -119,7 +120,6 @@ keymap = [
 
   { keys = ["m", "s"], command = "linemode size" },
   { keys = ["m", "m"], command = "linemode mtime" },
-  { keys = ["m", "M"], command = "linemode sizemtime" },
 
   { keys = ["g", "r"], command = "cd /" },
   { keys = ["g", "c"], command = "cd ~/.config" },
@@ -127,6 +127,7 @@ keymap = [
   { keys = ["g", "D"], command = "cd ~/Desktop" },
   { keys = ["g", "e"], command = "cd /etc" },
   { keys = ["g", "h"], command = "cd ~/" },
+  { keys = ["g", "b"], command = "cd -" },
   { keys = ["?"], command = "help" },
 
 
@@ -134,8 +135,6 @@ keymap = [
   { keys = ["b", "a"], command = "add_bookmark"},
   { keys = ["."], command = "cd_bookmark"},
 
-  # open zsh in current directory
-  { keys = [":"], command = "shell /bin/zsh" },
 
   # preview scroll
   { keys = ["page_up"], command = "preview_cursor_move_up" },
